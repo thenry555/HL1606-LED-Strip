@@ -69,8 +69,11 @@ class HL1606strip
     unsigned long _faderPulseNextEdge;
 
     // we will control up to 255 LEDs!
-    uint8_t *_leds;
-    uint8_t _numLEDs;
+    // Modified to run more LEDs (i Don't think it will this simple)
+    // uint8_t *_leds;
+    // uint8_t _numLEDs;
+    uint16_t *_leds;
+    uint16_t _numleds;
   public:
 
     HL1606strip(int, int, int, int, uint8_t);
